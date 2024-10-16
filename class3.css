@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: lato;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container-1 {
+    background-color: #790f0f;
+    padding: 4em 2em 2em 2em;
+}
+
+.container-1 h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+.container-1 p {
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    line-height: 1.6;
+    margin: 2em;
+}
+
+.container-1 p span {
+    color: orange;
+}
+
+.container-2 {
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+.heading h1 {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+
+}
+
+.heading p {
+    text-align: center;
+    font-family: 'lato', sans-serif;
+
+}
+
+.contact-container {
+    margin-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 1px solid black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.name-inputs {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.name-inputs .input-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'lato', sans-serif;
+
+}
+
+/*email */
+.email-container {
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.input-control .email input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'lato', sans-serif;
+}
+
+/*phone */
+.phone-input-container {
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.flag-icon {
+    background-image: url('./image/usa.svg');
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'lato', sans-serif;
+}
+
+
+/*table */
+.password-requirements {
+    width: 100%;
+    margin: 10px;
+}
+
+.password-requirements td {
+    padding: 5px;
+    color: green;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.signup-container {
+    padding: 20px;
+}
+
+.signup-container p {
+    color: black;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.signup-button {
+    background-color: orangered;
+    padding: 5px 200px;
+    border: 0;
+    outline: 0;
+    font-size: larger;
+    color: white;
+
+}
+
+.signup-container span {
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 2fr);
+        
+    }
+
+    .container-1  img {
+        width: 50%;
+    }
+
+    .container-1 {
+        padding: 3em 1em 1em 1em;
+            
+    }
+
+    .container-1 h1 {
+        font-size: 2em;
+    }
+
+    .container-1 p {
+        font-size: 1.1em;
+        margin: 1em;
+    }
+
+    .contact-container {
+        padding: 10px;
+    }
+
+    .signup-button {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .name-inputs {
+        flex-direction: column;
+
+    }
+    .name-inputs .input-control {
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container-1{
+        display: none;
+    }
+}
